@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Header = () => {
     return (
-        <div>
+        <div className = "heading">
             <h1>Pomodoro Clock</h1>
         </div>
     )

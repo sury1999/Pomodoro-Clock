@@ -10,8 +10,10 @@ function App() {
   return (
     <div>
     <Header />
+    <div className = "workandbreak">
     <Break />
     <Work />
+    </div>
     <Display />
     </div>
   );
