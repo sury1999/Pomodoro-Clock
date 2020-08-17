@@ -5,17 +5,19 @@ import { Break } from './components/Break';
 import { Work } from './components/Work';
 import { Display } from './components/Display';
 
+import {GlobalProvider} from './context/GlobalState';
+
 function App() {
 
   return (
-    <div>
+    <GlobalProvider>
     <Header />
     <div className = "workandbreak">
     <Break />
     <Work />
     </div>
     <Display />
-    </div>
+    </GlobalProvider>
   );
 }
 

@@ -1,6 +1,9 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
+import { GlobalContext } from '../context/GlobalState'
 
 export const Work = () => {
+    const {children} = useContext(GlobalContext);
+    console.log(context)
     const [workTime, setWorkTime] = useState(25)
     return (
         <div className = "workclass">
